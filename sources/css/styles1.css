@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    
+    background-color: #ffffff;
+    color: #5a5a5a;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px; 
+    /* Mac dinh font-size 16 */
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------------------------------------- */
+/* ---------------------------Header------------------------ */
+/* ---------------------------------------------------------- */
+.Header{
+    background-image:linear-gradient( /*to right bottom*/ 45deg, rgba(2,33,64,0.8)55%,rgba(45,95,93,0.85)),url(../img/background4.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+.logo{
+    height: 250px;  
+    float: left;
+    margin-left: 50px;
+}
+
+.Header-Choice{
+     float: right;
+    margin-right: 100px;
+     list-style: none;
+}
+
+.Header-Choice li{
+    display: inline-block;
+    margin-top: 110px;
+    margin-right: 50px;
+}
+
+.Header-Choice li a{
+    text-decoration: none;
+    color:white;
+    font-size: 150%;
+    font-weight: 700;
+    transition: border-bottom 0.5s
+}
+
+.Header-Choice li a:hover, 
+.Header-Choice li a:active{
+    color: yellow;
+    border-bottom: 2px solid #cccccc;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.Header-text {
+    font-size: 250%;
+    margin-left: 150px;
+    color: white;
+}
+
+.Header-input{
+    background-color: rgb(223, 141, 9);
+    font-size: 60%;
+    margin-top: 60px;
+    margin-right: 40px;
+    margin-bottom: 100px;
+}
+/* New Word
+    Hover: Bay lượn
+    decoration
+
+*/
+

@@ -1,0 +1,277 @@
+
+/* Tỷ lệ  1 : 1,5 */
+
+/* Big  tablet to 1200px */
+/* Small tablet to big tablet from 768px to 1023px */
+@media only screen and (max-width: 1200px){
+    .Logo{
+        width: 200px;
+     }
+    .Content{
+        left: 60%;
+    }
+    .Tools ul li{
+        margin-right: 15px;
+    }
+    /* --------ABOUT-------- */
+    .about-active{
+         padding: 20px;
+    }
+    .title-img{
+        width: 80%;
+        margin-left: 7%;
+        text-align: center;
+    }
+    /* ----------PRODUCT--------- */
+    .product-advertisement{
+        margin: 0;
+        width: 100%;
+    }
+    .advertisement ul{
+        margin-left: 10%;
+    }
+    .advertisement{
+        width: 90%;
+        font-size: 19px;
+    }
+    .advertisement .btn{
+        width: 80%;
+        margin-left: 10%;
+    }
+    /* ------SPONSOR------- */
+    .sponsor-section .row{
+        margin-left: 0;
+        width: 100%;
+    }
+    /* ------CONTACT------- */
+    .information-icon li{
+        width: 450px;
+    }
+    .social-icon{
+        width: 500px;
+    }
+    form{
+        margin-top: 20px;
+        width: 75%;  
+        margin-left: 30%;
+    }
+    .form-contact .row{
+        padding: 5  px;
+    }
+    label{
+        font-size: 23px;
+    }
+    input,textarea{
+        font-size: 20px;
+        width: 100%;
+        padding: 6px;
+    }
+    input[type=submit]{
+        margin-top: 10px;
+        font-size: 18px;
+        padding: 5px;
+        margin-left: 20%;
+    }
+}
+
+/* Small tablet to big tablet from 768px to 1023px  < 768 thì bị*/
+ @media only screen and (max-width:1023px){
+.Logo{
+    width: 200px;
+ }
+.Tools ul li  a{
+    font-size: 24px;
+}
+.Content{
+    width: 85%;
+    font-size: 70%;
+    left: 60%;
+}
+.Content .btn{
+    padding: 10px 20px;
+    width: 180px;
+    font-size: 22px;
+    margin-right: 40px;
+}
+/* --------ABOUT------- */
+.title-img{
+    font-size: 18px;
+}
+/* ----------PRODUCT--------- */
+
+.advertisement{
+    width: 95%;
+    font-size: 14px;
+}
+.product-price{
+    font-size: 230%;
+    margin-top: 20px;
+}
+.advertisement .btn{
+   padding: 8px 5px;
+}
+.product-advertisement{
+    margin: 0;
+}
+/* ----------TESTIMONIALS--------- */
+.information-testimonial span{
+    display: block;
+}
+/* ----------SPONSOR--------- */
+.logo-new{
+    width: 120px;
+    margin-left: 70%;
+}
+/* ----------CONTACT--------- */
+.information-icon li{
+    font-size: 90%;
+}
+.social-icon li{
+    margin-left: 1%;
+}
+.social-icon{
+    padding-left: 10px;
+}
+label{
+    font-size: 21px;
+}
+footer{
+    padding: 10px;
+}
+} 
+
+/* Small phone to small tablet  <576px thì chuyển*/
+@media only screen and (max-width:767px){
+    .Logo{
+        width: 300px;
+    }
+    .main-nav{
+        /* visibility: hidden; */ /* không dùng vì lúc sau còn dùng jquery*/
+        display: none;
+    }
+    .mobile-icon{
+        display: block;
+    }
+    .Content{
+        font-size: 50%;   
+        transform: translate(-55%,-50%);
+    }
+    .Content .btn{
+        width: 130px;
+        padding: 5px 0px;
+        font-size: 170%;
+    }
+    .col{
+        width: 100%;
+    }
+    .about-picture{
+        margin-bottom: 30px;
+    }
+
+    .advertisement{
+        margin-bottom: 30px;
+        font-size: 90%;
+    }
+    .advertisement ul li{   
+        margin-left: 20%;
+    }
+    .advertisement .btn{
+        width: 60%;
+        margin-left: 20%;
+    }
+    blockquote:before{
+        margin-top: -20px;
+    }
+    .box-testimonial{
+        margin-bottom: 60px;
+    }
+    .logo-new{
+        width: 100px;
+        margin-left: 65%;
+    }
+    form{
+        width: 100%;
+        margin-left: 0;
+    }
+    label{
+        margin-left: 5%;
+    }
+    input[type=submit]{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .information-icon{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .information-contact{
+        text-align: center;
+    }
+    .information-icon li{
+        margin-left: 0;
+        width: 100%;
+    }
+    .social-icon i{
+        font-size: 60px;
+    }
+    .social-icon{
+        padding: 10px;
+        width: 100%;
+    }
+    .social-icon li{
+        margin-left: 20px;
+    }
+
+}
+
+/*  ADD      ---------- < 440px --------- */
+@media only screen and (max-width: 585px){
+   .mobile-icon{
+        right: 5%;
+   }
+}
+
+/* Small phone from 0 to 480px   < 361px thì chuyển*/ 
+@media only screen and (max-width:480px){
+    .Logo{
+        margin-left: 10%;
+        width: 200px;
+    }
+    .Content .btn{
+        padding: 5px 10px;
+        display: inline;
+        margin-right: 10%;
+    }
+    .Content{
+        left: 55%;
+    }
+    .title-img{
+        width: 80%;
+        margin-left: 8%;
+        text-align: center;
+    }
+    .advertisement ul li{
+        margin-left: 13%;
+    }
+    .advertisement{
+        width: 100%;
+    }
+    .product-advertisement{
+        margin-left: 0;
+    }
+    .contact-section .row{
+        padding: 50px 10px;
+    }
+    .social-icon i{
+        font-size: 90%;
+    }
+    .social-icon li:first-child{
+        margin-left: 0px;
+    }
+    .form-contact .row{
+        padding: 5px;
+    }
+    .label-row{
+        margin-bottom: 10px;
+    }
+}

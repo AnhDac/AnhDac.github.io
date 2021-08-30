@@ -1,0 +1,500 @@
+/* ------------------------------------------------------------------ */
+/* --------------------DEFAULT SETUP----------------------------- */
+/* -------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ffffff;
+    color: #5a5a5a;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px; 
+    /* Mac dinh font-size 16 */
+    text-rendering: optimizeLegibility;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------HEADING----------------------------- */
+/* -------------------------------------------------------------------- */
+
+.Header-Logo{
+    height: 30px;
+}
+.Header{
+    /* NEW */
+    background-image:linear-gradient(/*to right bottom*/45deg, rgba(2,33,64,0.8)55%,rgba(45,95,93,0.85)) ,url(../img/background4.jpeg); 
+    background-size: cover ;        /* NEW */   
+    background-position: center;        /* NEW */
+    height: 100vh;
+    background-attachment: fixed;           /* NEW */
+}
+.Logo{
+    margin-left: 100px;
+    margin-top: -20px;
+    height: 250px;
+    float: left;
+    margin-bottom: -100px;
+}   
+.Tools ul li{
+    display: inline;
+    margin-right: 50px;
+}
+.Tools ul{
+    list-style: none;       /* NEW */
+}
+.Tools ul li a:hover,
+.Tools ul li a:active{
+    color: rgb(147, 221, 172);
+    border-bottom: 2px solid whitesmoke ;
+}
+
+.Tools{
+    float: right;
+    margin-top:60px;
+    margin-right: 50px;
+}
+
+.Tools ul li a{
+    text-decoration: none  ;    /* New   */
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 2px;
+    transition: border-bottom 0.5s;
+}
+
+
+.clearfix::after{
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+/* -------------------------- */
+/* ------------ConTent------ */
+/* ----------------------- */
+
+.Content{
+    margin-top: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-45%,-55%);   /*New */
+    width: 1140px;
+}
+.Heading-Content{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: yellow;
+}
+h1{
+    text-transform: uppercase; /* NEW */
+    font-size: 300%;
+    font-weight: 400;
+    letter-spacing: 5px;    /* NEW */
+    word-spacing: 1px;    /* NEW */
+    line-height: 135%;    /* NEW */
+    margin-bottom: 50px;
+}
+
+/* -------------STICKKY--------- */
+.sticky{
+    background-color:  rgb(2,33,64);
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    /* height: 70px; */
+    padding-bottom: 10px;
+
+}
+.sticky .Logo{
+     height: 180px;
+    margin-top: -45px;
+    margin-bottom: -70px;
+}
+.sticky .Tools{
+    margin: 0px;
+}
+.sticky .Tools ul li  a {
+     font-size: 130%;
+}
+/* ----mobile icon---- */
+.mobile-icon{
+    color: #708ba5;
+    font-size: 200%;
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    display: none;
+}
+.sticky .mobile-icon{
+    top: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+/* ----------------------------REUSABLE COMPONENT------------------------ */
+/* -------------------------------------------------------------------- */
+.btn{
+    font-size: 25px;
+    margin-right:80px;
+    text-decoration: none;    /* NEW */
+    color: white;
+    border-radius: 50px;    /* NEW */
+    padding: 15px 30px;
+    background-color: rgb(230, 114, 19);
+    width: 210px;
+    display: inline-block;
+    text-align: center;
+    /* inline-block : có thể chỉnh được height vs width, 
+    còn inline thì không NOT */
+    
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgb(170, 99, 52);
+}
+
+.topic{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    color: rgb(226, 148, 59);
+}
+.topic:after{
+    content: " ";
+    display: block;
+    width: 190px;
+    height: 5px;
+    background-color: rgba(248, 140, 17, 0.5);
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.icon{
+    color: rgb(56, 73, 102);
+    font-size: 120%;
+    margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ABOUT-SECTION------------------------ */
+/* -------------------------------------------------------------------- */
+.about-section{ 
+    padding: 50px;
+}
+.about-active{
+    display: inline-block;
+    padding: 50px;
+}
+ .about-topic p{
+    color: #265077;
+    text-align: center;
+    font-size: 22px;
+    width: 55%;
+    margin: 50px 0;
+    margin-left: 23%;
+    line-height: 140%;
+} 
+
+.about-picture{
+    position: relative;
+}
+.about-picture img{
+    width: 90%;
+    border-radius: 30px;
+    border: 5px solid rgb(38,80,119);
+    box-shadow: 0px 5px 15px 3px  #265077;
+    /* x - y- Độ mờ - Độ Phóng Rộng  -  Màu */
+    transition: all .5s;
+}
+.about-picture:hover .title-img,
+.about-picture:active .title-img{
+    opacity: 1;
+    transform: translate(-65%,-55%); 
+    color: white;
+}
+.about-picture:hover img,
+.about-picture:active img{
+    filter: brightness(55%) blur(1px);
+}
+.title-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-65%,100%); 
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------PRODUCT-SECTION------------------------ */
+/* -------------------------------------------------------------------- */
+.product-section{
+    padding: 50px;
+    background-color: rgb(219, 219, 219);
+}
+.product-advertisement{
+    display: inline-block;
+    width: 90%;
+    margin: 5%;
+}
+.product-advertisement li{
+    list-style: none;
+}
+.advertisement h3{
+    background-color: rgb(38,80,119);
+    color: whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 98%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.product-price{
+    font-size: 250%;
+    font-weight: 400;
+    text-align: center;
+}
+.product-price span{
+    font-weight: lighter ;
+    font-size: 90%;
+}
+.advertisement ul{
+    padding: 30px 0;
+    margin-left: 20%;
+}
+.advertisement .btn{
+    margin-left: 20%;
+}
+.advertisement ul li{
+    margin-bottom: 20px;
+}
+.advertisement{
+    width:80%;
+    padding-bottom: 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px; 
+    color: rgb(38,80,119);
+    box-shadow: 0px 5px 2px 1px rgb(192, 189, 189);
+}
+ 
+/* ------------------------------------------------------------------ */
+/* ---------------------------TESTIMONIALS-SECTION------------------------ */
+/* -------------------------------------------------------------------- */
+.testimonial-section{ 
+    background-image:linear-gradient(45deg, rgba(2,33,64,0.8)55%,rgba(45,95,93,0.85)), url(../img/background-testimonial.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    background-attachment: fixed;
+}
+.testimonial-section .topic{
+    margin-bottom: 80px;
+}
+.row{
+    padding: 50px;
+}
+.box-testimonial{
+    width: 80%;
+    color: white;
+}
+blockquote:before {
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    margin-top: -60px;
+    font-style: italic;
+}
+.information-testimonial{
+    margin-top: 30px;
+}
+.information-testimonial img{
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;/* New : căn giữa*/
+    border: 2px solid rgb(39, 115, 214) ;
+}
+.information-testimonial span{
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-left: 10px;
+    color:  rgb(149, 180, 209);
+}
+.box-testimonial blockquote{
+    font-style: italic;
+    text-align:left;
+    letter-spacing: 1px;
+    width: 80%;
+    line-height: 30px;
+}
+/* ------------------------------------------------------------------ */
+/* ---------------------------SPONSORS-SECTION------------------------ */
+/* -------------------------------------------------------------------- */
+.sponsor-section{
+    background-color: whitesmoke;
+    padding: 50px;
+}
+.logo-sponsor{
+    text-align: center;
+}
+.logo-sponsor img{
+    width: 150px;
+    transition: transform 0.5s;
+}
+.logo-sponsor p{
+    color: rgb(56, 58, 153);
+    font-weight: 750;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 120%;
+}
+.sponsor-section .row{
+    width: 80%;
+    margin-left: 140px;
+}
+.logo-sponsor img:hover ,
+.logo-sponsor img:active {
+ transform: scale(1.2);/*New*/
+}
+.logo-new{
+    width: 150px;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: -100px;
+}
+/* ------------------------------------------------------------------ */
+/* ---------------------------CONTACT-SECTION------------------------ */
+/* -------------------------------------------------------------------- */
+
+.contact-section{
+    background-image: linear-gradient(45deg, rgba(2,33,64,0.8)55%,rgba(45,95,93,0.85)),url(/sources/img/Smile2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contact-section .row{
+    padding-left: 50px;
+  
+}
+form{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 60%;
+    margin-left: 35%;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.form-contact .row{
+      padding:10px 0;
+}
+/* ------------------ */
+/* /------FORM------ */
+/* ------------------- */
+label{
+    color: white;
+    font-size: 130%;
+} 
+.form-contact .row:last-child{
+    text-align: center;
+}
+
+input[type=submit]{  /*------------new*/
+    border-radius: 7px;
+    width: 60%;
+    
+}
+
+textarea{
+    resize: none;
+    width: 90%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+textarea:focus,input:focus{             /*------------new*/
+    color: white;
+    background-color: rgba(56, 55, 55, 0.3);
+}
+textarea,input{
+    border-radius: 5px;
+    color: whitesmoke;
+    outline: none; /*--------- New */
+    cursor: pointer;
+    font-size: 100%;
+    padding: 13px;
+    border: 2px solid rgba(0, 0, 0,0.3);
+    transition: all .3s;
+}
+
+input{
+    width:90%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* ------------- */
+/* ---FOOTER----- */
+/* -------------- */
+footer{
+    text-align: center;
+    background-color: rgb(165, 164, 164);
+    color: white;
+    padding: 20px 0;
+}
+.information-contact ul{
+    list-style: none;
+}
+.information-icon{
+    line-height: 40px;
+    color: rgb(230, 230, 230);
+    margin-top: 90px;
+}
+.social-icon{
+    padding: 50px;
+}
+.social-icon li{
+    font-size: 250%;
+    color: whitesmoke;
+    margin-left: 30px;
+    display: inline-block;
+}
+.social-icon li i{
+    transition: all.3s;
+}
+.information-icon i:hover,
+.information-icon i:active{
+    transform: scale(1.3);
+    color:rgb(87, 138, 180);
+    cursor: pointer;
+}
+.social-icon i:hover,
+.social-icon i:active{
+    transform: scale(1.3);
+    color:rgb(223, 142, 11);
+    cursor: pointer;
+}
+.information-icon i{
+    color: rgb(42, 114, 173);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 130%;
+    transition: all.3s;
+}
+
