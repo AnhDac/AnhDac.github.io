@@ -3,7 +3,9 @@
 
 /* Big  tablet to 1200px */
 /* Small tablet to big tablet from 768px to 1023px */
-@media only screen and (max-width: 1200px){
+/* @media only screen and (max-width: 1200px){ */
+
+@media only screen and (min-width: 1024px){
     .Logo{
         width: 200px;
      }
@@ -141,7 +143,7 @@ footer{
 } 
 
 /* Small phone to small tablet  <576px thì chuyển*/
-@media only screen and (max-width:767px){
+@media only screen and (max-width:740px){
     .Logo{
         width: 300px;
     }
